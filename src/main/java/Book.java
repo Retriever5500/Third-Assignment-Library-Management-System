@@ -1,3 +1,33 @@
 public class Book {
-    //Book should contain name,author,year of publish and ISBN
+    private String name;
+    private String author;
+    private int yearOfPublish;
+    // Unique number assigned to each book
+    private int ISBN;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public int getYear() {
+        return yearOfPublish;
+    }
+
+    public int getISBN() {
+        return ISBN;
+    }
+
+    // Checking if two books are identical
+    public boolean equals(Book book) {
+        if(name == book.getName() && author == book.getAuthor() &&
+           yearOfPublish == book.getYear() && ISBN == book.getISBN()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
