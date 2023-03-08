@@ -1,4 +1,4 @@
-![SBU](image.jpg)
+![SBU](https://raw.githubusercontent.com/Retriever5500/Third-Assignment-Library-Management-System/dev/res/SBU.png)
 
 
 
