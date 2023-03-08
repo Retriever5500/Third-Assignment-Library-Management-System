@@ -58,7 +58,9 @@ public class User {
     }
 
     public void returnBook(Library library, Book book){
-        books.remove(book);
-        library.increaseBook(book, 1);
+        if(books.contains(book)) {
+            books.remove(book);
+            library.increaseBook(book, 1);
+        }
     }
 }
