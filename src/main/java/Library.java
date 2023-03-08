@@ -33,7 +33,7 @@ public class Library {
 
     public Book searchBook(String bookName){
         for(Book candidateBook : books) {
-            if(candidateBook.getName() == bookName) {
+            if(candidateBook.getName().equals(bookName)) {
                 return candidateBook;
             }
         }
