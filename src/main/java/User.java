@@ -10,6 +10,7 @@ public class User {
     public User(String username, String password) {
         this.username = username;
         this.password = password;
+        books = new ArrayList<Book>();
     }
 
     public String getUsername() {
@@ -17,7 +18,11 @@ public class User {
     }
 
     public String getPassword() {
-        return username;
+        return password;
+    }
+
+    public List<Book> getBooks() {
+        return books;
     }
 
     public void setUsername(String username) {
@@ -26,6 +31,10 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
     }
 
     // Checking if two users are identical

@@ -12,7 +12,7 @@ public class Librarian {
     }
 
     public String getPassword() {
-        return username;
+        return password;
     }
 
     public void setUsername(String username) {
