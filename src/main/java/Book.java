@@ -5,6 +5,13 @@ public class Book {
     // Unique number assigned to each book
     private int ISBN;
 
+    public Book(String name, String author, int yearOfPublish, int ISBN) {
+        this.name = name;
+        this.author = author;
+        this.yearOfPublish = yearOfPublish;
+        this.ISBN = ISBN;
+    }
+
     public String getName() {
         return name;
     }
@@ -39,7 +46,7 @@ public class Book {
 
     // Checking if two books are identical
     public boolean equals(Book book) {
-        if(name == book.getName() && author == book.getAuthor() &&
+        if(name.equals(book.getName()) && author.equals(book.getAuthor()) &&
            yearOfPublish == book.getYear() && ISBN == book.getISBN()) {
             return true;
         } else {
