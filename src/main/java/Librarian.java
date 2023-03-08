@@ -15,9 +15,17 @@ public class Librarian {
         return username;
     }
 
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     // Checking if two librarians are identical
     public boolean equals(Librarian librarian) {
-        if(username == librarian.getUsername() && password == librarian.getPassword()) {
+        if(username.equals(librarian.getUsername()) && password.equals(librarian.getPassword())) {
             return true;
         } else {
             return false;

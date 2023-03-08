@@ -21,6 +21,22 @@ public class Book {
         return ISBN;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setYear(int year) {
+        this.yearOfPublish = year;
+    }
+
+    public void setISBN(int ISBN) {
+        this.ISBN = ISBN;
+    }
+
     // Checking if two books are identical
     public boolean equals(Book book) {
         if(name == book.getName() && author == book.getAuthor() &&

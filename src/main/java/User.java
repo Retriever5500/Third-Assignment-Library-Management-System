@@ -20,20 +20,31 @@ public class User {
         return username;
     }
 
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     // Checking if two users are identical
     public boolean equals(User user) {
-        if(username == user.getUsername() && password == user.getPassword()) {
+        if(username.equals(user.getUsername()) && password.equals(user.getPassword())) {
             return true;
         } else {
             return false;
         }
     }
 
-    public void rentBook(Library library, Book book){
+    public boolean rentBook(Library library, Book book){
         // if there is at least one amount of the book, then we can lend it
         if(library.isEnoughBook(book)) {
             books.add(book);
             library.decreaseBook(book, 1);
+            return true;
+        } else {
+            return false;
         }
     }
 
